@@ -1,0 +1,12 @@
+{
+    "records": [
+        {"id": 1, "query": "INSERT INTO Features (name) VALUES ('Heated seats')"},
+        {"id": 2, "query": "INSERT INTO Features (name) VALUES ('Cruise control')"},
+        {"id": 3, "query": "INSERT INTO Features (name) VALUES ('Reverse camera')"},
+        {"id": 4, "query": "INSERT INTO Features (name) VALUES ('Lane-keep assist')"},
+        {"id": 5, "query": "INSERT INTO Features (name) VALUES ('Auto parking')"},
+        {"id": 6, "query": "INSERT INTO Features (name) VALUES ('Remote start')"},
+        {"id": 7, "query": "INSERT INTO Features (name) VALUES ('Quick charge')"},
+        {"id": 8, "query": "INSERT INTO Features (name) VALUES ('Heated steering wheel')"}
+    ]
+}

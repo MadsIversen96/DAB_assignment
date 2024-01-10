@@ -1,0 +1,16 @@
+{
+    "records": [
+        {"id": 1, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('46875', 'Ford', 'Fiesta', 1, 1, '2023-05-12', FALSE)"},
+        {"id": 2, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('79845', 'VW', 'Golf', 2, 1, '2023-04-10', FALSE)"},
+        {"id": 3, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('75215', 'Toyota', 'Corolla', 2, 2, '2023-06-05', FALSE)"},
+        {"id": 4, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('52536', 'Ford', 'Taurus', 3, 2, '2022-11-28', FALSE)"},
+        {"id": 5, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('65643', 'Nissan', 'Ultima', 4, 2, '2023-04-10', FALSE)"},
+        {"id": 6, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('10235', 'Volvo', 'XC90', 2, 3, '2023-04-10', FALSE)"},
+        {"id": 7, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('54865', 'VW', 'ID.3', 5, 1, '2023-05-15', FALSE)"},
+        {"id": 8, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('98542', 'Ford', 'Fiesta', 6, 1, '2023-06-10', FALSE)"},
+        {"id": 9, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('45678', 'Ford', 'Focus', 3, 1, '2023-06-05', FALSE)"},
+        {"id": 10, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('45823', 'Toyota', 'Corolla', 2, 2, '2023-02-28', FALSE)"},
+        {"id": 11, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('65215', 'Audi', 'A3', 1, 2, '2023-03-12', FALSE)"},
+        {"id": 12, "query": "INSERT INTO Vehicles (regNo, make, model, colourId, typeId, lastServiceDate, rented) VALUES ('78947', 'Toyota', 'Land Cruiser', 7, 3, '2023-01-31', FALSE)"}
+    ]
+}

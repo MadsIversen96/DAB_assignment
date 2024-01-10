@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> DAB - Rent Vehicles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <script src="../js/common.js"></script>
+
+</head>
+
+<body>
+  <%- include('./partials/navbar.ejs', {user: user}) %>
+    <div class="container-fluid mt-5">
+      <h2 class="p-3 text-center">Vehicles for Rent - Types</h2>
+        <div class="list-group">
+          <div class="row px-3 py-1 w-100">
+            <span class="col py-1 bg-noroff">Id</span>
+            <span class="col py-1 bg-noroff">Name</span>
+            <span class="col py-1 bg-noroff">Options</span>
+          </div>
+          <% types.forEach(function(type) { %>
+            <div class="row px-3 py-1 w-100">
+              <span class="col py-1 bg-light">
+                <%=type.id%>
+              </span>
+              <span class="col py-1 bg-light">
+                <%=type.name%>
+              </span>
+              <span class="col py-1 bg-light text-center">
+                <button class="btn-sm btn-warning" onclick="updateType(<%=type.id%>)">Update type</button>
+                <button class="btn-sm btn-danger" onclick="deleteType(<%=type.id%>)">Delete type</button>
+              </span>
+            </div>
+            <% }); %>
+              <hr>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4 text-center mt-2">
+                <form action="/types/add" method="POST">
+                  <label for="new-type-name">Enter the name for the new type:</label>
+                  <input type="text" name="name" id="new-type-name" required>
+                  <button class="btn btn-success" type="submit" >Add New Type</button>
+                </form>
+              </div>
+              <div class="col-4"></div>
+            </div>
+      </div>
+    </div>
+</body>
+
+</html>

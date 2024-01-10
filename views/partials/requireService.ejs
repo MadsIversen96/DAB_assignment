@@ -1,0 +1,34 @@
+<div class="row px-3 py-1 w-100">
+    <span class="col py-1 bg-noroff">Id</span>
+    <span class="col py-1 bg-noroff">Registration No.</span>
+    <span class="col py-1 bg-noroff">Make</span>
+    <span class="col py-1 bg-noroff">Model</span>
+    <span class="col py-1 bg-noroff">Colour</span>
+    <span class="col py-1 bg-noroff">Vehicle Type</span>
+    <span class="col py-1 bg-noroff">Last Service Date</span>
+<% vehicles.forEach(function(vehicle) { %>
+    <div class="row px-3 py-1 w-100">
+        <span class="col py-1 bg-light ">
+            <%= vehicle.id %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.regNo %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.make %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.model %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.colour %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.type %>
+        </span>
+        
+        <span class="col py-1 bg-light">
+            <%= vehicle.lastServiceDate %>
+        </span>
+    </div>
+<% }); %>

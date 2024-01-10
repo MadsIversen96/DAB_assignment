@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> DAB - Rent Vehicles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+  <%- include('./partials/navbar.ejs', {user: user}) %>
+    <div class="container-fluid mt-5">
+      <h2 class="p-3 text-center">Vehicles for Rent</h2>
+      <div class="list-group">
+        <div class="row px-3 py-1 w-100 text-center">
+          <span class="col py-1 bg-light ">
+            <button class="btn-sm btn-success" onclick="sqlQuery1()">Popular Vehicle Types</button>
+          </span>
+          <span class="col py-1 bg-light ">
+            <button class="btn-sm btn-success" onclick="sqlQuery4()">Currently Rented Vehicles</button>
+          </span>
+          <% if (user && user.roleId === 1) { %>
+            <span class="col py-1 bg-light ">
+              <button class="btn-sm btn-success" onclick="sqlQuery2()">Vehicles requiring service</button>
+            </span>
+          <% } %>
+          <span class="col py-1 bg-light ">
+            <button class="btn-sm btn-success" onclick="sqlQuery3()">Cruise Control</button>
+          </span>
+          <span class="col py-1 bg-light ">
+            <button class="btn-sm btn-warning" onclick="allVehicles()">All Vehicles</button>
+          </span>
+        </div>
+        
+        <div class="vehicle-list">
+          <div class="row px-3 py-1 w-100">
+          <span class="col py-1 bg-noroff">Id</span>
+          <span class="col py-1 bg-noroff">Registration No.</span>
+          <span class="col py-1 bg-noroff">Make</span>
+          <span class="col py-1 bg-noroff">Model</span>
+          <span class="col py-1 bg-noroff">Colour</span>
+          <span class="col py-1 bg-noroff">Vehicle Type</span>
+          <span class="col py-1 bg-noroff">Features</span>
+          <span class="col py-1 bg-noroff">Last Service Date</span>
+          <span class="col py-1 bg-noroff">Rented</span>
+          <span class="col py-1 bg-noroff">Serviceable</span>
+          <span class="col py-1 bg-noroff">Options</span>
+        </div>
+          <% vehicles.forEach(function(vehicle) { %>
+          <div class="row px-3 py-1 w-100">
+            <span class="col py-1 bg-light ">
+              <%=vehicle.id%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.regNo%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.make%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.model%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.colour%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.type%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.features%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.lastServiceDate%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%=vehicle.rented%>
+            </span>
+            <span class="col py-1 bg-light">
+              <%= vehicle.serviceable ? 'True' : 'False' %>
+            </span>
+            <span class="col py-1 bg-light text-center">
+              <button class="btn-sm btn-warning" onclick="rentVehicle(<%=vehicle.id%>)">Rent</button>
+              <button class="btn-sm btn-danger" onclick="cancelRental(<%=vehicle.id%>)">Cancel Rental</button>
+            </span>
+          </div>
+          <% }); %>
+        </div>
+          
+      </div>
+    </div>
+</body>
+
+</html>

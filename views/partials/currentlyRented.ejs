@@ -1,0 +1,41 @@
+<div class="row px-3 py-1 w-100">
+    <span class="col py-1 bg-noroff">Id</span>
+    <span class="col py-1 bg-noroff">Registration No.</span>
+    <span class="col py-1 bg-noroff">Make</span>
+    <span class="col py-1 bg-noroff">Model</span>
+    <span class="col py-1 bg-noroff">Colour</span>
+    <span class="col py-1 bg-noroff">Vehicle Type</span>
+    <span class="col py-1 bg-noroff">Features</span>
+    <span class="col py-1 bg-noroff">Rented By</span>
+    <span class="col py-1 bg-noroff">Options</span>
+<% vehicles.forEach(function(vehicle) { %>
+    <div class="row px-3 py-1 w-100">
+        <span class="col py-1 bg-light ">
+            <%= vehicle.id %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.regNo %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.make %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.model %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.colour %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.type %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.features %>
+        </span>
+        <span class="col py-1 bg-light">
+            <%= vehicle.rentedBy %>
+        </span>
+        <span class="col py-1 bg-light text-center">
+            <button class="btn-sm btn-danger" onclick="cancelRental(<%= vehicle.id %>)">Cancel Rental</button>
+        </span>
+    </div>
+<% }); %>

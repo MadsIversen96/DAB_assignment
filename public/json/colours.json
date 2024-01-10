@@ -1,0 +1,11 @@
+{
+    "records": [
+        {"id": 1, "query": "INSERT INTO Colours (name) VALUES ('Black')"},
+        {"id": 2, "query": "INSERT INTO Colours (name) VALUES ('White')"},
+        {"id": 3, "query": "INSERT INTO Colours (name) VALUES ('Blue')"},
+        {"id": 4, "query": "INSERT INTO Colours (name) VALUES ('Silver')"},
+        {"id": 5, "query": "INSERT INTO Colours (name) VALUES ('Green')"},
+        {"id": 6, "query": "INSERT INTO Colours (name) VALUES ('Red')"},
+        {"id": 7, "query": "INSERT INTO Colours (name) VALUES ('Tan')"}
+    ]
+}

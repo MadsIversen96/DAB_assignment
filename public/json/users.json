@@ -1,0 +1,7 @@
+{
+    "records": [
+        {"id": 1, "query": "INSERT INTO Users (fullName, username, password, roleId) VALUES ('System admin', 'Admin', 'admin1234', 1)"},
+        {"id": 2, "query": "INSERT INTO Users (fullName, username, password, roleId) VALUES ('User', 'User', 'user1234', 2)"},
+        {"id": 3, "query": "INSERT INTO Users (fullName, username, password, roleId) VALUES ('User2', 'User 2', 'User1234', 2)"}
+    ]
+}

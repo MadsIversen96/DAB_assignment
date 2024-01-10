@@ -1,0 +1,7 @@
+{
+    "records": [
+        {"id": 1, "query": "INSERT INTO Types (name) VALUES ('Hatchback')"},
+        {"id": 2, "query": "INSERT INTO Types (name) VALUES ('Sedan')"},
+        {"id": 3, "query": "INSERT INTO Types (name) VALUES ('SUV')"}
+    ]
+}

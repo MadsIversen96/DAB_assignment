@@ -1,0 +1,23 @@
+{
+    "records": [
+        {"id": 1, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (1, 1)"},
+        {"id": 2, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (1, 2)"},
+        {"id": 3, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (2, 2)"},
+        {"id": 4, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (3, 3)"},
+        {"id": 5, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (3, 4)"},
+        {"id": 6, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (4, 5)"},
+        {"id": 7, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (4, 6)"},
+        {"id": 8, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (5, 1)"},
+        {"id": 9, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (6, 4)"},
+        {"id": 10, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (6, 2)"},
+        {"id": 11, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (7, 7)"},
+        {"id": 12, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (8, 2)"},
+        {"id": 13, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (8, 3)"},
+        {"id": 14, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (9, 2)"},
+        {"id": 15, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (10, 3)"},
+        {"id": 16, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (10, 1)"},
+        {"id": 17, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (11, 5)"},
+        {"id": 18, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (11, 8)"},
+        {"id": 19, "query": "INSERT INTO vehiclefeatures (VehicleId, FeatureId) VALUES (12, 6)"}
+    ]
+}

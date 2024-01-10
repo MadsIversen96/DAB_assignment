@@ -1,0 +1,6 @@
+{
+    "records": [
+        { "id": 1, "query": "INSERT INTO Roles (name) VALUES ('admin')"},
+        { "id": 2, "query": "INSERT INTO Roles (name) VALUES ('customer')"}
+    ]
+}
